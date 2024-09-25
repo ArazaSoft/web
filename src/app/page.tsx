@@ -1,6 +1,5 @@
 'use client'
 
-import React, { use } from 'react'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 import { MessageCircle, Calendar, Heart } from 'lucide-react'
