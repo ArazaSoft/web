@@ -17,6 +17,11 @@
     "outDir": "tmp",
     "noEmit": true,
     "paths": {
+      "@arazaWeb/components": ["./src/components"],
+      "@arazaWeb/media/*": ["./src/media/*"],
+      "@arazaWeb/constants": ["./src/constants"],
+      "@arazaWeb/interfaces": ["./src/interfaces"],
+      "@arazaWeb/services": ["./src/services"],
       "~/*": ["./src/*"]
     }
   },

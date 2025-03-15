@@ -1,0 +1,9 @@
+export { RouterHead } from './router-head';
+export { BannerHeader } from './banner-header';
+export { AboutUsSection } from './about-us-section';
+export { CardInformation } from './card-information';
+export { ServicesSection } from './services-section';
+export { PartnersSection } from './partners-section';
+export { ContactSection } from './contact-section';
+export { Footer } from './footer';
+export { General } from './general';
