@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-nunito: 'Nunito', 'sans-serif';
+  --color-orange: #f2c029;
+  --color-green: #165947;
+}
+
+.arz-inline-left {
+  @apply float-left inline;
+}
+
+.arz-body {
+  @apply font-nunito bg-gray-100 font-medium;
+}
+
+.arz-card-information-img {
+  @apply inset-0 h-full w-[50px] object-contain object-center;
+}
+
+.arz-parther-logos {
+  @apply inset-0 h-full max-h-[150px] w-full object-contain object-center;
+}
+
+.no-select {
+  pointer-events: none;
+  user-drag: none;
+  -webkit-user-drag: none;
+}

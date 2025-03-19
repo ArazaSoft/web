@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "Araza",
+  "short_name": "Araza",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "🚀 Desarrollo de software a la medida e inteligencia artificial avanzada. En ARAZÁ creamos soluciones innovadoras y eficientes para optimizar tu negocio."
+}
