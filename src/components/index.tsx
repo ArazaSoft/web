@@ -7,3 +7,4 @@ export { PartnersSection } from './partners-section';
 export { ContactSection } from './contact-section';
 export { Footer } from './footer';
 export { General } from './general';
+export { SectionContainer } from './section-container';

@@ -1,36 +1,33 @@
-import { ArazaLocation } from '@arazaWeb/media/images';
+import { Contact } from '@arazaWeb/media/images';
 import { component$ } from '@builder.io/qwik';
 
 export const ContactSection = component$(() => {
   return (
-    <section class="py-16 px-6 max-w-4xl mx-auto text-center sm:text-left">
-      <h2 class="text-4xl font-bold text-green">Contáctanos</h2>
+    <section class="mx-auto max-w-4xl px-6 py-16 text-center sm:text-left">
+      <h2 class="text-green text-4xl font-bold">Contáctanos</h2>
       <p class="mt-2 text-lg text-gray-700">
-        Estamos aquí para ayudarte.<br />
+        Estamos aquí para ayudarte.
+        <br />
         ¡Hablemos y llevemos tu proyecto al siguiente nivel!
       </p>
-      <div class="mt-8 flex flex-col sm:flex-row items-center sm:items-start gap-8">
-        <div class="w-full sm:w-1/2 flex justify-center">
-          <ArazaLocation alt="Oficina de Araza Tech"
-            class="rounded-2xl shadow-lg inset-0 h-[250px] max-full w-full object-cover object-top"
-          />
+      <div class="mt-8 flex flex-col items-center gap-8 sm:flex-row sm:items-start">
+        <div class="flex w-full justify-center sm:w-1/2">
+          <Contact alt="Oficina de Araza Tech" class="max-full inset-0 h-[250px] w-full rounded-2xl object-cover object-top shadow-lg" />
         </div>
-        <div class="w-full sm:w-1/2 space-y-4 text-lg sm:mt-[55px] mt-0">
-          <p class="flex items-center gap-3 justify-center sm:justify-start">
+        <div class="mt-0 w-full space-y-4 text-lg sm:mt-[65px] sm:w-1/2">
+          <p class="flex items-center justify-center gap-3 sm:justify-start">
             📩{' '}
             <a href="mailto:contacto@araza.tech" class="hover:underline" target="_blank">
               contacto@araza.tech
             </a>
           </p>
-          <p class="flex items-center gap-3 justify-center sm:justify-start">
+          <p class="flex items-center justify-center gap-3 sm:justify-start">
             📞{' '}
             <a href="https://api.whatsapp.com/send?phone=573142991623" class="hover:underline" target="_blank">
               +57 314 299 1623
             </a>
           </p>
-          <p class="flex items-center gap-3 justify-center sm:justify-start">
-            📍 Calle 123 #45-67, Bogotá, Colombia
-          </p>
+          { /* <p class="flex items-center justify-center gap-3 sm:justify-start">📍 Carrera 15 #36-70, Bogotá, Colombia</p> */}
         </div>
       </div>
     </section>

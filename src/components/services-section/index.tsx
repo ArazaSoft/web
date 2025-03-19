@@ -4,7 +4,7 @@ export const ServicesSection = component$(() => {
   const scrollVisibleController = useSignal(0);
   const stylesBgServices = useSignal({});
 
-  const imageBgServices = './src/images/bg-services.webp'
+  const imageBgServices = './src/images/bg-services.webp';
 
   // eslint-disable-next-line
   useVisibleTask$(() => {
@@ -17,8 +17,8 @@ export const ServicesSection = component$(() => {
         const offset = (scrollVisibleController.value - window.scrollY) * 0.3;
         stylesBgServices.value = {
           backgroundImage: `url('${imageBgServices}')`,
-          backgroundPosition: `center ${offset}px`
-        }
+          backgroundPosition: `center ${offset}px`,
+        };
       }
     };
     window.addEventListener('scroll', handleScroll);
@@ -47,9 +47,8 @@ export const ServicesSection = component$(() => {
     <section
       class="lazyloadBg x1:mx-0 relative mx-4 mt-7 rounded-2xl bg-cover bg-fixed p-4 pt-10 shadow-lg sm:p-10"
       data-arzload-bg={imageBgServices}
-      data-arzload-style=''
-      style={stylesBgServices.value}
-    >
+      data-arzload-style=""
+      style={stylesBgServices.value}>
       <div class="absolute inset-0 rounded-2xl bg-black/70 shadow-lg"></div>
 
       <div class="relative text-white">
@@ -62,8 +61,7 @@ export const ServicesSection = component$(() => {
         <div class="mt-8 grid gap-6 md:grid-cols-3">
           {services.map(service => (
             <div key={service.title} class="relative transform overflow-hidden rounded-lg bg-gray-800 shadow-lg transition-transform hover:scale-105 hover:shadow-xl">
-              <div class="lazyloadBg h-40 bg-cover bg-center" data-arzload-bg={service.img}
-                data-arzload-style=''></div>
+              <div class="lazyloadBg h-40 bg-cover bg-center" data-arzload-bg={service.img} data-arzload-style=""></div>
 
               <div class="p-6">
                 <h3 class="text-xl font-bold text-gray-200">{service.title}</h3>
